@@ -10,8 +10,6 @@ This page is a **migration guide**: what people meant by "Google News API," why 
 4. How do Google News sections map to API filters?
 5. What does migration look like from RSS and from npm scrapers?
 
-> **Try it live:** [Articles sandbox](https://perigon.io/sandbox?endpoint=articles) · **Read the docs:** [Getting started](https://perigon.io/docs/api/getting-started)
-
 ---
 
 ## What "Google News API" usually means
@@ -298,5 +296,4 @@ Alerts are email notifications, not a query layer. Fine for individuals; poor fo
 - **Pick the pattern first** (reader, structured feed, API, or research dataset), then shortlist vendors.
 - **Sections are not queries** - rebuild section-like UX with Google Content Categories plus sources and dates, not keyword clones.
 - **Migrate by intent, not URL** - inventory feeds, map to Google Content Categories or keywords, shadow-run the API, then retire scrapers in one cutover.
-
-**Get started:** [Getting started](https://perigon.io/docs/api/getting-started) · [Articles sandbox](https://perigon.io/sandbox?endpoint=articles) · [API pricing](https://perigon.io/products/pricing/apis)
+- **After cutover, monitor narratives** - when alerts should track storylines rather than every URL, follow [breaking news API: monitor news trends](https://perigon.io/blog/breaking-news-api-monitor-news-trends).
