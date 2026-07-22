@@ -143,16 +143,16 @@ flowchart LR
   subgraph UX[Google News UX]
     Sec[Section: Business]
   end
-  subgraph API[API rebuild]
+  subgraph Rebuild[API rebuild]
     GCC[Google Content Categories<br/>Finance / Banking]
     Src[Source allowlist]
     Date[Date window]
-    Kw[Keyword / entity for names]
   end
+  Kw[Keyword / entity for names]
   Sec --> GCC
   Sec --> Src
   Sec --> Date
-  Kw -.->|named entities only| API
+  Kw -.->|named entities only| GCC
 ```
 
 **Google Content Categories** = hierarchical industry paths on articles (e.g. Finance / Banking). Target a leaf or a whole branch. Combine with date, publisher, language, and exclude rules for opinion/paid. Keyword search still matters for named entities; categories carry the industry shape.
